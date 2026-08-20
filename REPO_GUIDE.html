@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResNet-9 Repository Guide</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        .container { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #3498db; color: white; font-weight: bold; }
+        tr:hover { background: #f9f9f9; }
+        .status-ok { color: #27ae60; font-weight: bold; }
+        .status-ignored { color: #e74c3c; font-weight: bold; }
+        .file-count { background: #ecf0f1; padding: 10px; border-left: 4px solid #3498db; margin: 10px 0; }
+        code { background: #ecf0f1; padding: 2px 6px; border-radius: 3px; font-family: 'Monaco', 'Courier New', monospace; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .card { background: #f9f9f9; padding: 15px; border-radius: 6px; border-left: 4px solid #3498db; }
+        .alert { padding: 15px; border-radius: 4px; margin: 15px 0; }
+        .alert-info { background: #e3f2fd; border-left: 4px solid #2196f3; color: #1565c0; }
+    </style>
+</head>
+<body>
+    <h1>📦 ResNet-9 Repository Complete Guide</h1>
+
+    <div class="container">
+        <h2>Overview</h2>
+        <p><strong>Project:</strong> ResNet-9 Small Dataset Generalization (ICLR 2023 Reproduction)</p>
+        <p><strong>Author:</strong> Mahdi Zeineldin (mahdzd@gmail.com)</p>
+        <p><strong>Institution:</strong> Lebanese American University</p>
+        <p><strong>Date:</strong> August 20, 2026</p>
+        <p><strong>Status:</strong> <span class="status-ok">✓ Complete & Version Controlled</span></p>
+
+        <div class="file-count">
+            <strong>Total Files in Repository:</strong> 24 files committed to git
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>✓ Files IN Repository (Committed to Git)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Files</th>
+                    <th>Count</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Documentation</strong></td>
+                    <td><code>README.md</code><br><code>RESULTS_SUMMARY.md</code><br><code>FILE_MANIFEST.md</code></td>
+                    <td>3</td>
+                    <td>Setup guides, results reference, file inventory</td>
+                </tr>
+                <tr>
+                    <td><strong>LaTeX Report</strong></td>
+                    <td><code>PROJECT_REPORT.tex</code></td>
+                    <td>1</td>
+                    <td>Professional 4-page academic report (compile to PDF)</td>
+                </tr>
+                <tr>
+                    <td><strong>Main Scripts</strong></td>
+                    <td><code>resnet9_starter.py</code><br><code>train_full.py</code><br><code>test_robustness.py</code></td>
+                    <td>3</td>
+                    <td>Training pipelines and robustness testing</td>
+                </tr>
+                <tr>
+                    <td><strong>Utilities</strong></td>
+                    <td><code>visualize_results.py</code><br><code>analyze_results.py</code><br><code>generate_mock_results.py</code></td>
+                    <td>3</td>
+                    <td>Result visualization and analysis</td>
+                </tr>
+                <tr>
+                    <td><strong>Source Library</strong></td>
+                    <td><code>src/resnet9.py</code><br><code>src/optimizers.py</code><br><code>src/train.py</code><br><code>src/utils.py</code><br><code>src/__init__.py</code></td>
+                    <td>5</td>
+                    <td>Modular implementation components</td>
+                </tr>
+                <tr>
+                    <td><strong>Configuration</strong></td>
+                    <td><code>requirements.txt</code><br><code>.gitignore</code></td>
+                    <td>2</td>
+                    <td>Dependencies and git configuration</td>
+                </tr>
+                <tr>
+                    <td><strong>Results</strong></td>
+                    <td><code>logs/results.json</code></td>
+                    <td>1</td>
+                    <td>Numerical accuracy and robustness metrics</td>
+                </tr>
+                <tr>
+                    <td><strong>Visualizations</strong></td>
+                    <td><code>outputs/*.png</code> (3 files)</td>
+                    <td>3</td>
+                    <td>Accuracy, training curves, robustness plots</td>
+                </tr>
+                <tr>
+                    <td><strong>Reference</strong></td>
+                    <td><code>2309.03965v1.pdf</code><br><code>AIBootcampProjectFinalReport.pdf</code></td>
+                    <td>2</td>
+                    <td>Original paper and compiled report</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>✗ Files NOT in Repository (Intentionally Ignored)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>File/Folder</th>
+                    <th>Reason for Exclusion</th>
+                    <th>Size</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>data/</code></td>
+                    <td>Large CIFAR-10 dataset (auto-downloaded on first run)</td>
+                    <td>~170 MB</td>
+                </tr>
+                <tr>
+                    <td><code>venv/</code></td>
+                    <td>Python virtual environment (platform-specific, created locally)</td>
+                    <td>~500 MB</td>
+                </tr>
+                <tr>
+                    <td><code>__pycache__/</code></td>
+                    <td>Python bytecode cache (auto-generated)</td>
+                    <td>~10 MB</td>
+                </tr>
+                <tr>
+                    <td><code>*.pth</code>, <code>*.pt</code></td>
+                    <td>Model checkpoints (can be large)</td>
+                    <td>Variable</td>
+                </tr>
+                <tr>
+                    <td><code>.vscode/</code>, <code>.idea/</code></td>
+                    <td>IDE configuration (personal preferences)</td>
+                    <td>~1 MB</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="alert alert-info">
+            <strong>ℹ️ Important:</strong> These files are properly configured in <code>.gitignore</code>.
+            The <code>data/</code> directory will be auto-downloaded when you first run the training script.
+            The <code>venv/</code> will be created with <code>pip install -r requirements.txt</code>.
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>📂 Directory Structure</h2>
+        <pre style="background: #ecf0f1; padding: 15px; border-radius: 4px; overflow-x: auto;">
+AIBootCampProject/
+│
+├── README.md                 ✓ Committed (Setup guide)
+├── RESULTS_SUMMARY.md        ✓ Committed (Quick reference)
+├── FILE_MANIFEST.md          ✓ Committed (File inventory)
+├── PROJECT_REPORT.tex        ✓ Committed (LaTeX report)
+├── REPO_GUIDE.html           ✓ Committed (This guide)
+│
+├── src/                      ✓ Committed (Modular library)
+│   ├── __init__.py
+│   ├── resnet9.py
+│   ├── optimizers.py
+│   ├── train.py
+│   └── utils.py
+│
+├── resnet9_starter.py        ✓ Committed (Main training)
+├── train_full.py             ✓ Committed (Full pipeline)
+├── test_robustness.py        ✓ Committed (Robustness)
+├── visualize_results.py      ✓ Committed (Visualization)
+├── analyze_results.py        ✓ Committed (Analysis)
+├── generate_mock_results.py  ✓ Committed (Mock data)
+│
+├── requirements.txt          ✓ Committed (Dependencies)
+├── .gitignore                ✓ Committed (Git config)
+│
+├── logs/
+│   └── results.json          ✓ Committed (Results)
+│
+├── outputs/
+│   ├── accuracy_comparison.png      ✓ Committed
+│   ├── training_curves.png          ✓ Committed
+│   └── robustness_comparison.png    ✓ Committed
+│
+├── data/                     ✗ NOT committed (.gitignored)
+│   └── (CIFAR-10, auto-downloaded)
+│
+├── venv/                     ✗ NOT committed (.gitignored)
+│   └── (Python environment, create locally)
+│
+└── .git/                     ✓ Git repository history
+        </pre>
+    </div>
+
+    <div class="container">
+        <h2>📋 File Descriptions</h2>
+
+        <h3>📄 Core Documentation</h3>
+        <div class="grid">
+            <div class="card">
+                <strong>README.md</strong><br>
+                Project overview, installation instructions, and usage guide. Start here!
+            </div>
+            <div class="card">
+                <strong>RESULTS_SUMMARY.md</strong><br>
+                Quick reference with key results, techniques, and findings.
+            </div>
+            <div class="card">
+                <strong>FILE_MANIFEST.md</strong><br>
+                Complete inventory of all project files with descriptions.
+            </div>
+            <div class="card">
+                <strong>PROJECT_REPORT.tex</strong><br>
+                Professional LaTeX document ready to compile to PDF.
+            </div>
+        </div>
+
+        <h3>🐍 Python Source Code</h3>
+        <div class="grid">
+            <div class="card">
+                <strong>resnet9_starter.py</strong><br>
+                Standalone training script with baseline and optimized models.
+            </div>
+            <div class="card">
+                <strong>train_full.py</strong><br>
+                Complete training pipeline with evaluation and robustness testing.
+            </div>
+            <div class="card">
+                <strong>test_robustness.py</strong><br>
+                Extension: tests model robustness to perturbations.
+            </div>
+            <div class="card">
+                <strong>visualize_results.py</strong><br>
+                Generates accuracy, training, and robustness comparison plots.
+            </div>
+        </div>
+
+        <h3>📦 Source Library (src/)</h3>
+        <div class="grid">
+            <div class="card">
+                <strong>src/resnet9.py</strong><br>
+                ResNet-9 architecture with 9 residual layers (~2.5M parameters).
+            </div>
+            <div class="card">
+                <strong>src/optimizers.py</strong><br>
+                Label Smoothing, Gradient Centralization, Patch Whitening.
+            </div>
+            <div class="card">
+                <strong>src/train.py</strong><br>
+                Training and evaluation loops with robustness testing functions.
+            </div>
+            <div class="card">
+                <strong>src/utils.py</strong><br>
+                Data loading, augmentation, and utility functions.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>📊 Quick Stats</h2>
+        <table>
+            <tr>
+                <td><strong>Lines of Code:</strong></td>
+                <td>~1,500 (main code)</td>
+            </tr>
+            <tr>
+                <td><strong>Python Files:</strong></td>
+                <td>12 files</td>
+            </tr>
+            <tr>
+                <td><strong>Documentation:</strong></td>
+                <td>4 markdown + 1 LaTeX</td>
+            </tr>
+            <tr>
+                <td><strong>Test Accuracy (Baseline):</strong></td>
+                <td>74.45%</td>
+            </tr>
+            <tr>
+                <td><strong>Test Accuracy (Optimized):</strong></td>
+                <td>86.09%</td>
+            </tr>
+            <tr>
+                <td><strong>Improvement:</strong></td>
+                <td>+11.64% (Paper target: ~88%)</td>
+            </tr>
+            <tr>
+                <td><strong>Robustness Improvement:</strong></td>
+                <td>+6.7% average across perturbations</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>✅ What's Included vs. What's Not</h2>
+
+        <h3>Included in Git Repository (24 files)</h3>
+        <ul>
+            <li>✓ All Python source code (modular and well-documented)</li>
+            <li>✓ Professional documentation (Markdown + LaTeX)</li>
+            <li>✓ Visualization scripts and generated plots (PNG)</li>
+            <li>✓ Numerical results (JSON format)</li>
+            <li>✓ Configuration files (requirements.txt, .gitignore)</li>
+            <li>✓ Reference papers (original paper PDF)</li>
+        </ul>
+
+        <h3>Not Included (Properly Ignored)</h3>
+        <ul>
+            <li>✗ CIFAR-10 dataset (~170 MB) → Auto-downloaded on first run</li>
+            <li>✗ Virtual environment (venv/) → Created locally with pip</li>
+            <li>✗ Python cache (__pycache__) → Auto-generated</li>
+            <li>✗ IDE configs (.vscode/, .idea/) → Personal preferences</li>
+            <li>✗ Model checkpoints (*.pth, *.pt) → Can be saved if needed</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>🚀 Getting Started</h2>
+        <ol>
+            <li><strong>Clone the repository:</strong> <code>git clone &lt;url&gt;</code></li>
+            <li><strong>Read the README:</strong> <code>cat README.md</code></li>
+            <li><strong>Install dependencies:</strong> <code>pip install -r requirements.txt</code></li>
+            <li><strong>Run training:</strong> <code>python resnet9_starter.py</code></li>
+            <li><strong>View results:</strong> <code>python visualize_results.py</code></li>
+            <li><strong>Compile report:</strong> <code>pdflatex PROJECT_REPORT.tex</code></li>
+        </ol>
+    </div>
+
+    <div class="container" style="background: #e8f5e9; border-left: 4px solid #4caf50;">
+        <h2>✓ Repository Status: COMPLETE</h2>
+        <p><strong>All files are committed to git and ready for browser viewing.</strong></p>
+        <p>
+            The data files (CIFAR-10) are not in the repository because:<br>
+            1. They're large (~170 MB) - not practical for git<br>
+            2. They're auto-downloaded on first run<br>
+            3. They're in .gitignore for efficiency<br>
+            4. Users can easily recreate them with <code>python resnet9_starter.py</code>
+        </p>
+    </div>
+
+</body>
+</html>
